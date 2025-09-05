@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link href="./styles.css" rel="stylesheet">
+
   <title>Frontend Mentor | Product preview card component</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -21,22 +23,52 @@
   </style>
 </head>
 <body>
-
-  Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+      <div class="card">
+        <picture>
+          <source media="(width > 768px)" srcset="./images/image-product-desktop.jpg">
+          <img class="card-image" src="./images/image-product-mobile.jpg" alt="An image of a parfume bottle.">
+        </picture>
+        <div class="content">
+          <div class="information">
+            <p class="category-font">
+              PERFUME
+            </p>
+      
+            <h1>
+              Gabrielle Essence Eau De Parfum
+            </h1>
+      
+            <p class="paragraph">
+              A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+              Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+    
+          <div class="price">
+            <p class="current-price-font">
+              $149.99
+            </p>      
+            <p class="previous-price-font">
+              $169.99
+            </p>
+          </div>
+    
+          <button class="btn">
+            <span class="btn-font">
+              <img src="./images/icon-cart.svg" alt="A cart icon.">
+              Add to Cart
+            </span>
+          </button>
+        </div>
+      </div>
+  </main>
+    
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Åsa Johansson</a>.
+    </div>
+  </footer>
 </body>
 </html>
